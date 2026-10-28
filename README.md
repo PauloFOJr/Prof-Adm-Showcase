@@ -93,7 +93,7 @@ br.com.profadm
 - **Thymeleaf em vez de SPA:** menos código, telas rápidas e segurança de sessão nativa do Spring.
 - **Flyway desde o primeiro dia:** o esquema evoluiu em 19 versões sem perder dados em produção.
 - **2FA próprio com TOTP:** compatível com Google Authenticator e Authy, sem depender de serviço externo.
-- **Asaas em sandbox primeiro:** a troca para produção só acontece depois da validação.
+- **Asaas em produção, validado em sandbox:** cobranças, webhooks e conciliação foram testados no ambiente de sandbox antes de ligar a API de produção, que hoje processa as cobranças reais.
 
 ## 🛣 Próximos passos
 
