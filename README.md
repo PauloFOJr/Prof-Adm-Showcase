@@ -43,9 +43,9 @@ O **ProfAdm** nasceu para resolver isso para uma professora de inglês real, que
 - 📄 Exportação de documentos em PDF
 
 **Segurança e operação**
-- 🔐 Login com **verificação em duas etapas (TOTP)**, códigos de recuperação e bloqueio após tentativas erradas
+- 🔐 Login com **verificação em duas etapas (TOTP)**, códigos de recuperação, "confiar neste dispositivo" por 30 dias e bloqueio após tentativas erradas
 - 🗑 Lixeira e histórico de cadastros
-- 💾 Backup diário automático do banco e dos arquivos
+- 💾 Backup automático do banco e dos arquivos, com cópia externa no Google Drive
 
 ## 📸 Telas
 
@@ -84,16 +84,17 @@ br.com.profadm
 - **Front-end:** Thymeleaf renderizado no servidor, HTML/CSS/JS
 - **Banco:** PostgreSQL, com **19 migrações versionadas no Flyway**
 - **Integrações:** API do Asaas (pagamentos) e Google Docs API (contratos)
-- **Testes:** JUnit 5 e **Testcontainers** com PostgreSQL real
+- **Testes:** JUnit 5 e **Testcontainers** com PostgreSQL real (95 testes automatizados)
 - **Infra:** Docker Compose em VPS Linux, **Caddy** com HTTPS automático e serviço de backup diário
 
 ## 🧠 Decisões técnicas
 
-- **Monólito modular em vez de microsserviços:** um único usuário hoje, e deploy simples numa VPS de baixo custo. A separação por domínio deixa o caminho aberto para multi-inquilino (SaaS).
+- **Monólito modular em vez de microsserviços:** uma professora usando hoje e deploy simples numa VPS de baixo custo. A separação por domínio deixa o caminho aberto para multi-inquilino (SaaS).
 - **Thymeleaf em vez de SPA:** menos código, telas rápidas e segurança de sessão nativa do Spring.
-- **Flyway desde o primeiro dia:** o esquema evoluiu em 19 versões sem perder dados em produção.
-- **2FA próprio com TOTP:** compatível com Google Authenticator e Authy, sem depender de serviço externo.
-- **Asaas em produção, validado em sandbox:** cobranças, webhooks e conciliação foram testados no ambiente de sandbox antes de ligar a API de produção, que hoje processa as cobranças reais.
+- **Flyway:** o esquema evoluiu em 19 migrações versionadas, aplicadas automaticamente na subida da aplicação. O banco de produção nasce do zero com um único deploy.
+- **2FA próprio com TOTP:** compatível com Google Authenticator e Authy, sem depender de serviço externo. Inclui códigos de recuperação e a opção de confiar no dispositivo por 30 dias (cookie assinado e invalidado quando a senha muda).
+- **Asaas:** integração desenvolvida e testada no sandbox, hoje rodando com a conta real. A sincronização lê as cobranças e dá baixa nos pagamentos dentro do sistema.
+- **Backup com restauração testada:** dump diário do banco e dos arquivos, com cópia externa no Google Drive.
 
 ## 🛣 Próximos passos
 
@@ -106,4 +107,9 @@ br.com.profadm
 
 **Paulo Júnior**: desenvolvedor Java e Flutter.
 
+## 👨‍💻 Autor
+
+**Paulo Júnior**, desenvolvedor Java e Flutter.
+
 [![GitHub](https://img.shields.io/badge/GitHub-PauloFOJr-181717?style=flat-square&logo=github)](https://github.com/PauloFOJr)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Paulo_Júnior-0A66C2?style=flat-square&logo=linkedin)](COLE-AQUI-O-LINK-DO-SEU-LINKEDIN)
