@@ -112,4 +112,4 @@ br.com.profadm
 **Paulo Júnior**, desenvolvedor Java e Flutter.
 
 [![GitHub](https://img.shields.io/badge/GitHub-PauloFOJr-181717?style=flat-square&logo=github)](https://github.com/PauloFOJr)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Paulo_Júnior-0A66C2?style=flat-square&logo=linkedin)](COLE-AQUI-O-LINK-DO-SEU-LINKEDIN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Paulo_Júnior-0A66C2?style=flat-square&logo=linkedin)](www.linkedin.com/in/paulofojunior)
