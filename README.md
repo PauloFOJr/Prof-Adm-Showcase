@@ -1,4 +1,4 @@
-<h1 align="center">📚 ProfAdm</h1>
+<h1 align="center">📚 Prof-Adm</h1>
 
 <p align="center">
   Gestão de alunos, contratos, horas-aula e finanças para professores particulares.
