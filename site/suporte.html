@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suporte — ProfAdm</title>
+  <link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="index.html"><img src="assets/icone.svg" alt="" width="32" height="32">ProfAdm</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <button class="theme" id="theme" type="button" aria-label="Alternar tema escuro">Escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap section page" id="contato">
+    <h1 class="h2">Fale com a gente</h1>
+    <p>Dúvida, sugestão ou interesse em usar o ProfAdm? Preencha abaixo e seu aplicativo de e-mail abrirá com a mensagem pronta.</p>
+    <form id="contact" class="form" data-email="SEU_EMAIL_AQUI">
+      <label>Seu nome<input name="nome" required autocomplete="name"></label>
+      <label>Seu e-mail<input name="email" type="email" required autocomplete="email"></label>
+      <label>Assunto
+        <select name="assunto">
+          <option>Quero ser avisado do lançamento</option>
+          <option>Sugestão</option>
+          <option>Dúvida</option>
+        </select>
+      </label>
+      <label>Mensagem<textarea name="msg" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Enviar mensagem</button>
+    </form>
+  </main>
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <div><strong>ProfAdm</strong><br><small>© <span id="ano">2026</span> ProfAdm.</small></div>
+      <nav aria-label="Rodapé">
+        <a href="termos.html">Termos de Uso</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="exclusao-de-conta.html">Exclusão de Conta</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

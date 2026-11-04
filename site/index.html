@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProfAdm — Gestão de alunos, contratos e finanças para professores particulares</title>
+  <meta name="description" content="Matrícula, contrato, cronograma de aulas, cobrança e financeiro em um só lugar. Sistema em produção feito para professores particulares.">
+  <link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="#"><img src="assets/icone.svg" alt="" width="32" height="32">ProfAdm</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#telas">Telas</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#redes">Desenvolvedor</a>
+        <a href="suporte.html">Suporte</a>
+        <button class="theme" id="theme" type="button" aria-label="Alternar tema escuro">Escuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero__text">
+        <p class="tag">Feito para quem vive de dar aula</p>
+        <h1>Saiba quantas horas cada aluno ainda tem, quem está em atraso e quanto sobrou no mês.</h1>
+        <p class="lead">Matrícula, contrato, cronograma de aulas, cobrança e financeiro em um só lugar, no lugar das planilhas, dos cadernos e das conversas de WhatsApp.</p>
+        <a class="btn" href="suporte.html#contato">Quero ser avisado quando abrir para outros professores</a>
+        <p class="note">Em uso diário por uma professora de inglês real.</p>
+      </div>
+      <figure class="hero__img">
+        <img src="assets/dashboard.webp" alt="Dashboard do ProfAdm com indicadores de alunos, aulas e financeiro" width="1200" height="750">
+      </figure>
+    </section>
+
+    <section class="wrap section" id="recursos">
+      <h2>Menos controle manual. Mais tempo para ensinar.</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="ico" aria-hidden="true">📝</span>
+          <h3>Contrato sem retrabalho</h3>
+          <p>A matrícula gera o contrato em Google Docs e PDF, com adendos, renovação e cancelamento com multa.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">⏱</span>
+          <h3>Saldo de horas sempre claro</h3>
+          <p>Cronograma gerado pela agenda do contrato, com reposições, aulas canceladas, crédito de horas e tolerância para atrasos.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">💳</span>
+          <h3>Cobrança por PIX e boleto</h3>
+          <p>Integração com o Asaas: pagamentos sincronizados, saldo, extrato e quem está em atraso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" id="como-funciona">
+      <div class="wrap section">
+        <p class="tag">Como funciona</p>
+        <h2>Do aluno novo ao pagamento recebido em 3 passos</h2>
+        <ol class="steps">
+          <li><h3>Cadastre aluno e responsável</h3><p>Pessoa física ou jurídica, com validação de CPF/CNPJ.</p></li>
+          <li><h3>Matricule e gere o contrato</h3><p>Escolha o pacote e o parcelamento. O contrato e as parcelas saem prontos.</p></li>
+          <li><h3>Acompanhe aulas e recebimentos</h3><p>Veja o saldo de horas de cada aluno e o que já foi pago.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap section split">
+      <figure>
+        <img src="assets/relatorio.webp" alt="Relatório anual do MEI no ProfAdm" loading="lazy" width="1200" height="750">
+      </figure>
+      <div>
+        <p class="tag">Financeiro</p>
+        <h2>O ano do seu MEI sem fechar planilha na última hora.</h2>
+        <p>Entradas e despesas por categoria, forma de pagamento e taxas, reunidas em um relatório anual.</p>
+        <ul class="checks">
+          <li>Limite de faturamento do MEI já utilizado</li>
+          <li>Taxas do Asaas descontadas</li>
+          <li>Estimativa de IRPF</li>
+          <li>Exportação em CSV e documentos em PDF</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="telas">
+      <div class="wrap section">
+        <h2>Tudo no lugar, do cadastro ao relatório.</h2>
+        <div class="gallery">
+          <button type="button" data-full="assets/dashboard.webp" data-alt="Dashboard"><img src="assets/dashboard.webp" alt="Dashboard" loading="lazy"><span>Dashboard</span></button>
+          <button type="button" data-full="assets/matricula.webp" data-alt="Matrícula"><img src="assets/matricula.webp" alt="Matrícula" loading="lazy"><span>Matrícula</span></button>
+          <button type="button" data-full="assets/relatorio.webp" data-alt="Relatório anual do MEI"><img src="assets/relatorio.webp" alt="Relatório anual do MEI" loading="lazy"><span>Relatório anual do MEI</span></button>
+          <button type="button" data-full="assets/aluno.webp" data-alt="Novo aluno"><img src="assets/aluno.webp" alt="Novo aluno" loading="lazy"><span>Novo aluno</span></button>
+          <button type="button" data-full="assets/responsavel.webp" data-alt="Responsável financeiro"><img src="assets/responsavel.webp" alt="Responsável financeiro" loading="lazy"><span>Responsável financeiro</span></button>
+          <button type="button" data-full="assets/receita.webp" data-alt="Receitas"><img src="assets/receita.webp" alt="Receitas" loading="lazy"><span>Receitas</span></button>
+          <button type="button" data-full="assets/despesa.webp" data-alt="Despesas"><img src="assets/despesa.webp" alt="Despesas" loading="lazy"><span>Despesas</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="tecnologia">
+      <h2>Feito para rodar todo dia, com segurança.</h2>
+      <div class="split split--top">
+        <ul class="checks">
+          <li>Login com verificação em duas etapas (TOTP), códigos de recuperação e bloqueio após tentativas erradas</li>
+          <li>Backup diário automático do banco e dos arquivos</li>
+          <li>Lixeira e histórico de cada cadastro e contrato</li>
+          <li>Esquema do banco evoluído em 19 migrações versionadas, sem perder dados</li>
+        </ul>
+        <div>
+          <ul class="chips" aria-label="Tecnologias">
+            <li>Java 21</li><li>Spring Boot 4</li><li>PostgreSQL</li><li>Flyway</li><li>Thymeleaf</li>
+            <li>Docker</li><li>Caddy</li><li>Testcontainers</li><li>Asaas</li><li>Google Docs API</li>
+          </ul>
+          <p class="note">Monólito modular organizado por domínio, com deploy simples numa VPS Linux e HTTPS automático. O código-fonte é privado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Seu próximo mês pode ser mais organizado.</h2>
+        <p>O ProfAdm está evoluindo para atender vários professores na mesma plataforma. Deixe seu contato e seja avisado.</p>
+        <a class="btn btn--light" href="suporte.html#contato">Quero ser avisado</a>
+      </div>
+    </section>
+
+    <section class="wrap section feedback">
+      <p class="tag">Sua opinião conta</p>
+      <h2>É professor particular?</h2>
+      <p>Conte como você controla alunos e pagamentos hoje. Isso ajuda a decidir o que construir primeiro.</p>
+      <a class="btn btn--ghost" href="suporte.html#contato">Enviar sugestão</a>
+    </section>
+
+    <section class="wrap section dev" id="redes">
+      <p class="tag">Desenvolvido por</p>
+      <h2>Paulo Fernando de Oliveira Júnior</h2>
+      <p>Desenvolvedor Java e Flutter. Projeto do design à produção.</p>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/paulofojunior" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/PauloFOJr/Prof-Adm-Showcase" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <div><strong>ProfAdm</strong><br><small>© <span id="ano">2026</span> ProfAdm. Feito para quem vive de dar aula.</small></div>
+      <nav aria-label="Rodapé">
+        <a href="suporte.html">Fale com o suporte</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="exclusao-de-conta.html">Exclusão de Conta</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog id="viewer" aria-label="Visualizar tela">
+    <form method="dialog"><button class="close" aria-label="Fechar">×</button></form>
+    <img id="viewer-img" alt="">
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
