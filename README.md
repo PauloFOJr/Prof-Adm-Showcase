@@ -51,13 +51,13 @@ O **ProfAdm** nasceu para resolver isso para uma professora de inglês real, que
 
 | Dashboard | Matrícula |
 |---|---|
-| <img src="assets/dashboard.webp" alt="Dashboard" /> | <img src="assets/matricula.webp" alt="Matrícula" /> |
+| <img src="site/assets/dashboard.webp" alt="Dashboard" /> | <img src="site/assets/matricula.webp" alt="Matrícula" /> |
 | **Relatório anual do MEI** | **Novo aluno** |
-| <img src="assets/relatorio.webp" alt="Relatório anual" /> | <img src="assets/aluno.webp" alt="Novo aluno" /> |
+| <img src="site/assets/relatorio.webp" alt="Relatório anual" /> | <img src="site/assets/aluno.webp" alt="Novo aluno" /> |
 | **Responsável financeiro** | **Receitas** |
-| <img src="assets/responsavel.webp" alt="Responsável financeiro" /> | <img src="assets/receita.webp" alt="Receitas" /> |
+| <img src="site/assets/responsavel.webp" alt="Responsável financeiro" /> | <img src="site/assets/receita.webp" alt="Receitas" /> |
 | **Despesas** | |
-| <img src="assets/despesa.webp" alt="Despesas" /> | |
+| <img src="site/assets/despesa.webp" alt="Despesas" /> | |
 
 ## 🏗 Arquitetura
 
@@ -102,10 +102,6 @@ br.com.profadm
 - [ ] Portal do aluno para ver aulas e pagamentos
 - [ ] Recuperação de senha por e-mail
 - [ ] Landing page e planos de assinatura
-
-## 👨‍💻 Autor
-
-**Paulo Júnior**: desenvolvedor Java e Flutter.
 
 ## 👨‍💻 Autor
 
