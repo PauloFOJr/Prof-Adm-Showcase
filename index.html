@@ -6,22 +6,22 @@
   <title>ProfAdm — Gestão de alunos, contratos e finanças para professores particulares</title>
   <meta name="description" content="Matrícula, contrato, cronograma de aulas, cobrança e financeiro em um só lugar. Sistema em produção feito para professores particulares.">
   <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" href="assets/icone.svg" type="image/svg+xml">
-  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="site/assets/icone.svg" type="image/svg+xml">
+  <link rel="icon" href="site/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="site/assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="site/assets/apple-touch-icon.png">
+  <link rel="manifest" href=".vscode/site.webmanifest">
   <meta name="theme-color" content="#4D585A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="site/css/styles.css">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap topbar__in">
-      <a class="brand" href="#"><img src="assets/icone.svg" alt="" width="32" height="32">ProfAdm</a>
+      <a class="brand" href="#"><img src="site/assets/icone.svg" alt="" width="32" height="32">ProfAdm</a>
       <nav class="nav" aria-label="Principal">
         <a href="#recursos">Recursos</a>
         <a href="#telas">Telas</a>
@@ -43,7 +43,7 @@
         <p class="note">Em uso diário por uma professora de inglês real.</p>
       </div>
       <figure class="hero__img">
-        <img src="assets/dashboard.webp" alt="Dashboard do ProfAdm com indicadores de alunos, aulas e financeiro" width="1200" height="750">
+        <img src="site/assets/dashboard.webp" alt="Dashboard do ProfAdm com indicadores de alunos, aulas e financeiro" width="1200" height="750">
       </figure>
     </section>
 
@@ -82,7 +82,7 @@
 
     <section class="wrap section split">
       <figure>
-        <img src="assets/relatorio.webp" alt="Relatório anual do MEI no ProfAdm" loading="lazy" width="1200" height="750">
+        <img src="site/assets/relatorio.webp" alt="Relatório anual do MEI no ProfAdm" loading="lazy" width="1200" height="750">
       </figure>
       <div>
         <p class="tag">Financeiro</p>
@@ -101,13 +101,13 @@
       <div class="wrap section">
         <h2>Tudo no lugar, do cadastro ao relatório.</h2>
         <div class="gallery">
-          <button type="button" data-full="assets/dashboard.webp" data-alt="Dashboard"><img src="assets/dashboard.webp" alt="Dashboard" loading="lazy"><span>Dashboard</span></button>
-          <button type="button" data-full="assets/matricula.webp" data-alt="Matrícula"><img src="assets/matricula.webp" alt="Matrícula" loading="lazy"><span>Matrícula</span></button>
-          <button type="button" data-full="assets/relatorio.webp" data-alt="Relatório anual do MEI"><img src="assets/relatorio.webp" alt="Relatório anual do MEI" loading="lazy"><span>Relatório anual do MEI</span></button>
-          <button type="button" data-full="assets/aluno.webp" data-alt="Novo aluno"><img src="assets/aluno.webp" alt="Novo aluno" loading="lazy"><span>Novo aluno</span></button>
-          <button type="button" data-full="assets/responsavel.webp" data-alt="Responsável financeiro"><img src="assets/responsavel.webp" alt="Responsável financeiro" loading="lazy"><span>Responsável financeiro</span></button>
-          <button type="button" data-full="assets/receita.webp" data-alt="Receitas"><img src="assets/receita.webp" alt="Receitas" loading="lazy"><span>Receitas</span></button>
-          <button type="button" data-full="assets/despesa.webp" data-alt="Despesas"><img src="assets/despesa.webp" alt="Despesas" loading="lazy"><span>Despesas</span></button>
+          <button type="button" data-full="site/assets/dashboard.webp" data-alt="Dashboard"><img src="site/assets/dashboard.webp" alt="Dashboard" loading="lazy"><span>Dashboard</span></button>
+          <button type="button" data-full="site/assets/matricula.webp" data-alt="Matrícula"><img src="site/assets/matricula.webp" alt="Matrícula" loading="lazy"><span>Matrícula</span></button>
+          <button type="button" data-full="site/assets/relatorio.webp" data-alt="Relatório anual do MEI"><img src="site/assets/relatorio.webp" alt="Relatório anual do MEI" loading="lazy"><span>Relatório anual do MEI</span></button>
+          <button type="button" data-full="site/assets/aluno.webp" data-alt="Novo aluno"><img src="site/assets/aluno.webp" alt="Novo aluno" loading="lazy"><span>Novo aluno</span></button>
+          <button type="button" data-full="site/assets/responsavel.webp" data-alt="Responsável financeiro"><img src="site/assets/responsavel.webp" alt="Responsável financeiro" loading="lazy"><span>Responsável financeiro</span></button>
+          <button type="button" data-full="site/assets/receita.webp" data-alt="Receitas"><img src="site/assets/receita.webp" alt="Receitas" loading="lazy"><span>Receitas</span></button>
+          <button type="button" data-full="site/assets/despesa.webp" data-alt="Despesas"><img src="site/assets/despesa.webp" alt="Despesas" loading="lazy"><span>Despesas</span></button>
         </div>
       </div>
     </section>
@@ -168,6 +168,6 @@
     <img id="viewer-img" alt="">
   </dialog>
 
-  <script src="js/main.js" defer></script>
+  <script src="site/js/main.js" defer></script>
 </body>
 </html>
