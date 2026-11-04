@@ -1,0 +1,14 @@
+{
+  "name": "ProfAdm",
+  "short_name": "ProfAdm",
+  "description": "Gestão de alunos, contratos, horas-aula e finanças para professores particulares.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#4D585A",
+  "background_color": "#FAEDE4",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
